@@ -9,6 +9,9 @@ Please go to the [ImageNet official website](https://image-net.org/) to download
 ### Sketchy
 Please go to the [Sketchy official website](https://sketchy.eye.gatech.edu/) to download the datasets.
 
+## Installation
+The requirements of this repo can be found in [requirements.txt](https://github.com/XDUWQ/DiffSketching/blob/main/requirements.txt).
+
 ## Train
 
 train feature extraction network.
