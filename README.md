@@ -1,6 +1,6 @@
 # DiffSketching: Sketch Control Image Synthesis with Diffusion Models
 
-![Python 3.6](https://img.shields.io/badge/python-3.6-green) ![Pytorch 3.6](https://img.shields.io/badge/pytorch-3.6-green) ![MIT License](https://img.shields.io/badge/licence-MIT-green)
+![Python 3.6](https://img.shields.io/badge/python-3.6-green) ![Pytorch 1.13](https://img.shields.io/badge/pytorch-1.13-green) ![MIT License](https://img.shields.io/badge/licence-MIT-green)
 
 In this repository, you can find the official PyTorch implementation of [DiffSketching: Sketch Control Image Synthesis with Diffusion Models](https://bmvc2022.mpi-inf.mpg.de/0067.pdf) (BMVC2022). Supplements can be found [here](https://bmvc2022.mpi-inf.mpg.de/0067_supp.zip).
 
