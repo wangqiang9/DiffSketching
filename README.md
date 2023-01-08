@@ -35,6 +35,13 @@ python scripts/classifier_train.py --data_dir [path/to/imagenet-datasets]  --ite
 python scripts/interpolation.py --interval 0.14 --appoint_class [category-name] --save_path [path/to/save] --model_path [path/to/model]--use_ddim True 
 ```
 
+## Evaluation
+Please package the results to be evaluated in `.npz` format
+```
+python evaluator.py [/path/to/reference-data] [/path/to/generate-data]
+```
+
+
 ## Citation
 ```
 @inproceedings{Wang_2022_BMVC,
