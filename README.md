@@ -18,7 +18,7 @@ python scripts/feature_train.py
 
 train photosketch network.
 ```
-python train.py --dataroot [sketchy-datasets] --model pix2pix  --which_model_netG resnet_9blocks  --which_model_netD global_np 
+python scripts/photosketch_train.py --dataroot [sketchy-datasets] --model pix2pix  --which_model_netG resnet_9blocks  --which_model_netD global_np 
 ```
 
 train diffusion network.
