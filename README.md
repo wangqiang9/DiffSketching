@@ -42,3 +42,9 @@ year      = {2022},
 url       = {https://bmvc2022.mpi-inf.mpg.de/0067.pdf}
 }
 ```
+
+## Acknowledgements
+* [PerceptualSimilarity](https://github.com/richzhang/PerceptualSimilarity)
+* [PhotoSketch](https://github.com/mtli/PhotoSketch)
+* [SketchyDatabase](https://github.com/CDOTAD/SketchyDatabase)
+* [guided-diffusion](https://github.com/openai/guided-diffusion)
