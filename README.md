@@ -1,5 +1,8 @@
 # DiffSketching: Sketch Control Image Synthesis with Diffusion Models
-In this repository, you can find the official PyTorch implementation of [DiffSketching: Sketch Control Image Synthesis with Diffusion Models](https://bmvc2022.mpi-inf.mpg.de/0067.pdf) (BMVC2022).
+In this repository, you can find the official PyTorch implementation of [DiffSketching: Sketch Control Image Synthesis with Diffusion Models](https://bmvc2022.mpi-inf.mpg.de/0067.pdf) (BMVC2022). Supplements can be found [here](https://bmvc2022.mpi-inf.mpg.de/0067_supp.zip).
+
+Author: [Qiang Wang](https://github.com/XDUWQ), [Di Kong](https://github.com/Walterkd), [Fengyin Lin](https://github.com/MercuryMUMU) and [Yonggang Qi](https://qugank.github.io/).
+
 ![Fig.2](https://github.com/XDUWQ/DiffSketching/blob/main/images/Fig2_V14.png)
 
 ## Datasets
@@ -39,7 +42,7 @@ python scripts/interpolation.py --interval 0.14 --appoint_class [category-name] 
 ```
 
 ## Evaluation
-Please package the results to be evaluated in `.npz` format
+Please package the results to be evaluated in `.npz` format.
 ```
 python evaluator.py [/path/to/reference-data] [/path/to/generate-data]
 ```
