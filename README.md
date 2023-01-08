@@ -9,7 +9,7 @@ Please go to the [ImageNet official website](https://image-net.org/) to download
 ### Sketchy
 Please go to the [Sketchy official website](https://sketchy.eye.gatech.edu/) to download the datasets.
 
-### Train
+## Train
 
 train feature extraction network.
 ```
@@ -18,17 +18,21 @@ python scripts/feature_train.py
 
 train photosketch network.
 ```
-python scripts/photosketch_train.py --dataroot [sketchy-datasets] --model pix2pix  --which_model_netG resnet_9blocks  --which_model_netD global_np 
+python scripts/photosketch_train.py --dataroot [path/to/sketchy-datasets] --model pix2pix  --which_model_netG resnet_9blocks  --which_model_netD global_np 
 ```
 
 train diffusion network.
 ```
-python scripts/image_train.py --data_dir [imagenet-datasets] --iterations 1000000 --anneal_lr True --batch_size 512 --lr 4e-4 --save_interval 10000 --weight_decay 0.05
+python scripts/image_train.py --data_dir [path/to/imagenet-datasets] --iterations 1000000 --anneal_lr True --batch_size 512 --lr 4e-4 --save_interval 10000 --weight_decay 0.05
 ```
 
 train classifier network.
 ```
-python scripts/classifier_train.py --data_dir [imagenet-datasets]  --iterations 1000000 --anneal_lr True --batch_size 512 --lr 4e-4 --save_interval 10000 --weight_decay 0.05 --image_size 256 --classifier_width 256 --classifier_pool attention --classifier_resblock_updown True --classifier_use_scale_shift_norm True
+python scripts/classifier_train.py --data_dir [path/to/imagenet-datasets]  --iterations 1000000 --anneal_lr True --batch_size 512 --lr 4e-4 --save_interval 10000 --weight_decay 0.05 --image_size 256 --classifier_width 256 --classifier_pool attention --classifier_resblock_updown True --classifier_use_scale_shift_norm True
+```
+## Interpolation
+```
+python scripts/interpolation.py --interval 0.14 --appoint_class [category-name] --save_path [path/to/save] --model_path [path/to/model]--use_ddim True 
 ```
 
 ## Citation
