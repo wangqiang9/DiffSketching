@@ -18,22 +18,22 @@ The requirements of this repo can be found in [requirements.txt](https://github.
 
 ## Train
 
-train feature extraction network.
+train the feature extraction network.
 ```
 python scripts/feature_train.py 
 ```
 
-train photosketch network.
+train the photosketch network.
 ```
 python scripts/photosketch_train.py --dataroot [path/to/sketchy-datasets] --model pix2pix  --which_model_netG resnet_9blocks  --which_model_netD global_np 
 ```
 
-train diffusion network.
+train the diffusion network.
 ```
 python scripts/image_train.py --data_dir [path/to/imagenet-datasets] --iterations 1000000 --anneal_lr True --batch_size 512 --lr 4e-4 --save_interval 10000 --weight_decay 0.05
 ```
 
-train classifier network.
+train the classifier network.
 ```
 python scripts/classifier_train.py --data_dir [path/to/imagenet-datasets]  --iterations 1000000 --anneal_lr True --batch_size 512 --lr 4e-4 --save_interval 10000 --weight_decay 0.05 --image_size 256 --classifier_width 256 --classifier_pool attention --classifier_resblock_updown True --classifier_use_scale_shift_norm True
 ```
