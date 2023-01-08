@@ -1,7 +1,12 @@
 # DiffSketching: Sketch Control Image Synthesis with Diffusion Models
+
+![Python 3.6](https://img.shields.io/badge/python-3.6-green) ![Pytorch 3.6](https://img.shields.io/badge/pytorch-3.6-green) ![MIT License](https://img.shields.io/badge/licence-MIT-green)
+
 In this repository, you can find the official PyTorch implementation of [DiffSketching: Sketch Control Image Synthesis with Diffusion Models](https://bmvc2022.mpi-inf.mpg.de/0067.pdf) (BMVC2022). Supplements can be found [here](https://bmvc2022.mpi-inf.mpg.de/0067_supp.zip).
 
-Authors: [Qiang Wang](https://github.com/XDUWQ), [Di Kong](https://github.com/Walterkd), [Fengyin Lin](https://github.com/MercuryMUMU) and [Yonggang Qi](https://qugank.github.io/).
+Authors: [Qiang Wang](https://github.com/XDUWQ), [Di Kong](https://github.com/Walterkd), [Fengyin Lin](https://github.com/MercuryMUMU) and [Yonggang Qi](https://qugank.github.io/), Beijing University of Posts and Telecommunications, Beijing, China.
+
+> Abstract: Creative sketch is a universal way of visual expression, but translating images from an abstract sketch is very challenging. Traditionally, creating a deep learning model for sketch-to-image synthesis needs to overcome the distorted input sketch without visual details, and requires to collect large-scale sketch-image datasets. We first study this task by using diffusion models. Our model matches sketches through the cross domain constraints, and uses a classifier to guide the image synthesis more accurately. Extensive experiments confirmed that our method can not only be faithful to user’s input sketches, but also maintain the diversity and imagination of synthetic image results. Our model can beat GAN-based method in terms of generation quality and human evaluation, and does not rely on massive sketch-image datasets. Additionally, we present applications of our method in image editing and interpolation
 
 ![Fig.1](https://github.com/XDUWQ/DiffSketching/blob/main/images/all_generation_V5.png)
 ![Fig.2](https://github.com/XDUWQ/DiffSketching/blob/main/images/Fig2_V14.png)
