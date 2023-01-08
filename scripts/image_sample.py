@@ -32,7 +32,7 @@ photosketch_model = Pix2PixModel()
 photosketch_model.initialize(opt)
 
 # Fine-tuned resnet50 feature extractor in sketchy
-image_feature_path = "" #
+image_feature_path = "" 
 sketch_feature_path = ""
 
 resnet = torchvision.models.resnet50(pretrained=False)
