@@ -23,6 +23,9 @@ Please go to the [QuickDraw official website](https://github.com/googlecreativel
 
 ## Installation
 The requirements of this repo can be found in [requirements.txt](https://github.com/XDUWQ/DiffSketching/blob/main/requirements.txt).
+```
+pip install -r requirements.txt
+```
 
 ## Train
 
