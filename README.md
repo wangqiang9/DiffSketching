@@ -59,7 +59,7 @@ python scripts/interpolation.py --interval 0.14 --appoint_class [category-name] 
 ## Evaluation
 Please package the results to be evaluated in `.npz` format.
 ```
-python evaluator.py [/path/to/reference-data] [/path/to/generate-data]
+python evaluations/evaluator.py [/path/to/reference-data] [/path/to/generate-data]
 ```
 
 
