@@ -60,11 +60,10 @@ python scripts/interpolation.py --interval 0.14 --appoint_class [category-name] 
 ```
 
 ## Evaluation
-Please package the results to be evaluated in `.npz` format.
+Please package the results to be evaluated in `.npz` format, and provide `FID`, `IS`, `Precision` and `Recall` test results.
 ```
 python evaluations/evaluator.py [/path/to/reference-data] [/path/to/generate-data]
 ```
-
 
 ## Citation
 ```
