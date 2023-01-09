@@ -16,10 +16,10 @@ Authors: [Qiang Wang](https://scholar.google.com/citations?user=lXyi3t4AAAAJ&hl=
 Please go to the [ImageNet official website](https://image-net.org/) to download the complete datasets.
 
 ### Sketchy
-Please go to the [Sketchy official website](https://sketchy.eye.gatech.edu/) to download the datasets.
+Please go to the [Sketchy official website](https://sketchy.eye.gatech.edu/) to download the _Sketches and Photos_ datasets.
 
 ### QuickDraw
-Please go to the [QuickDraw official website](https://github.com/googlecreativelab/quickdraw-dataset) to download the datasets. 
+Please go to the [QuickDraw official website](https://github.com/googlecreativelab/quickdraw-dataset) to download the datasets. The original data format is vector, please convert it to `.png` or `.jpg` before use it.
 
 ## Installation
 The requirements of this repo can be found in [requirements.txt](https://github.com/XDUWQ/DiffSketching/blob/main/requirements.txt).
