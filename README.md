@@ -23,40 +23,72 @@ Please go to the [QuickDraw official website](https://github.com/googlecreativel
 
 ## Installation
 The requirements of this repo can be found in [requirements.txt](https://github.com/XDUWQ/DiffSketching/blob/main/requirements.txt).
-```
+```bash
 pip install -r requirements.txt
 ```
 
 ## Train
 
 Train the feature extraction network, please pay attention to modifying `image_root` before run.
-```
+```bash
 python scripts/feature_train.py 
 ```
 
 Train the photosketch network.
-```
-python scripts/photosketch_train.py --dataroot [path/to/sketchy-datasets] --model pix2pix  --which_model_netG resnet_9blocks  --which_model_netD global_np 
+```bash
+python scripts/photosketch_train.py --dataroot [path/to/sketchy-datasets] \
+                                    --model pix2pix \
+                                    --which_model_netG resnet_9blocks \
+                                    --which_model_netD global_np 
 ```
 
 Train the diffusion network.
-```
-python scripts/image_train.py --data_dir [path/to/imagenet-datasets] --iterations 1000000 --anneal_lr True --batch_size 512 --lr 4e-4 --save_interval 10000 --weight_decay 0.05
+```bash
+python scripts/image_train.py --data_dir [path/to/imagenet-datasets] \
+                              --iterations 1000000 \
+                              --anneal_lr True \
+                              --batch_size 512 \
+                              --lr 4e-4 \
+                              --save_interval 10000 \
+                              --weight_decay 0.05
 ```
 
 Train the classifier network.
-```
-python scripts/classifier_train.py --data_dir [path/to/imagenet-datasets]  --iterations 1000000 --anneal_lr True --batch_size 512 --lr 4e-4 --save_interval 10000 --weight_decay 0.05 --image_size 256 --classifier_width 256 --classifier_pool attention --classifier_resblock_updown True --classifier_use_scale_shift_norm True
+```bash
+python scripts/classifier_train.py --data_dir [path/to/imagenet-datasets] \
+                                   --iterations 1000000 \
+                                   --anneal_lr True \
+                                   --batch_size 512 \
+                                   --lr 4e-4 \
+                                   --save_interval 10000 \
+                                   --weight_decay 0.05 \
+                                   --image_size 256 \
+                                   --classifier_width 256 \
+                                   --classifier_pool attention \
+                                   --classifier_resblock_updown True \
+                                   --classifier_use_scale_shift_norm True
 ```
 
 ## Inference
-```
-python scripts/image_sample.py --model_path [/path/to/model] --image_root [/path/to/reference-image] --sketch_root [/path/to/reference-sketch] --save_path [/path/to/save] --batch_size 4 --num_samples 50000 --timestep_respacing ddim25 --use_ddim True --class_cond True --image_size 256 --learn_sigma True --use_fp16 True --use_scale_shift_norm True
+```bash
+python scripts/image_sample.py --model_path [/path/to/model] \
+                               --image_root [/path/to/reference-image] \
+                               --sketch_root [/path/to/reference-sketch] \
+                               --save_path [/path/to/save] \
+                               --batch_size 4 \
+                               --num_samples 50000 \
+                               --timestep_respacing ddim25 \
+                               --use_ddim True \
+                               --class_cond True \
+                               --image_size 256 \
+                               --learn_sigma True \
+                               --use_fp16 True \
+                               --use_scale_shift_norm True
 ```
 
 ## Evaluation
 Please package the results to be evaluated in `.npz` format, and provide `FID`, `IS`, `Precision` and `Recall` test results.
-```
+```bash
 python evaluations/evaluator.py [/path/to/reference-data] [/path/to/generate-data]
 ```
 
