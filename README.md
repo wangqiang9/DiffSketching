@@ -104,8 +104,14 @@ url       = {https://bmvc2022.mpi-inf.mpg.de/0067.pdf}
 }
 ```
 
+## License
+This project is released under the [MIT License](https://github.com/XDUWQ/DiffSketching/blob/main/LICENSE).
+
 ## Acknowledgements
 * [PerceptualSimilarity](https://github.com/richzhang/PerceptualSimilarity)
 * [PhotoSketch](https://github.com/mtli/PhotoSketch)
 * [SketchyDatabase](https://github.com/CDOTAD/SketchyDatabase)
 * [guided-diffusion](https://github.com/openai/guided-diffusion)
+
+## Contact
+If you have any questions about the code, please contact wanqqiang@bupt.edu.cn 
